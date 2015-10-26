@@ -6,7 +6,7 @@
  * Time: 13:43
  */
     $query = $_GET['query'];
-    echo "Hello ". $query;
+    echo "Hello ". $query ."<br/>";
 
     $forename = $_POST['forename'];
     $surname = $_POST['surname'];
