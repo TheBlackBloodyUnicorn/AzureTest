@@ -54,6 +54,7 @@
 
             while($row = $result->fetch_array()){
                 echo "<p>" . $row['title'] . "</p>";
+                echo "test";
             }
 
             $result->close();
