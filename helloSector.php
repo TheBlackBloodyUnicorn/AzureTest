@@ -40,6 +40,7 @@
 
             }
 
+
             // execute the SQL query
             $result = $db->query($sql_query);
 
