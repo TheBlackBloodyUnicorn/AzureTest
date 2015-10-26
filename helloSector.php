@@ -23,16 +23,19 @@
             switch($query){
                 case 'before2010':
                     $sql_query = "SELECT * FROM marvelMovies? WHERE yearReleased < 2010";
-                    echo "test";
+                    echo "before2010";
                     break;
                 case 'after2010':
                     $sql_query = "SELECT * FROM marvelMovies? WHERE yearReleased > 2010";
+                    echo "after2010";
                     break;
                 case 'oscar':
                     $sql_query = "SELECT * FROM marvelMovies? WHERE notes LIKE '%oscar%'";
+                    echo "oscar";
                     break;
                 case 'marvelstudio':
                     $sql_query = "SELECT * FROM marvelMovies? WHERE productionStudio = 'Marvel Studio'";
+                    echo "marvelstudio";
                     break;
 
             }
