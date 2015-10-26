@@ -8,4 +8,11 @@
     $query = $_GET['query'];
     echo "Hello ". $query;
 
+    $forename = $_POST['forename'];
+    $surname = $_POST['surname'];
+    $gender = $_POST['gender'];
+    $superpower = $_POST['superpower'];
+    echo $forename . $surname . $gender . $superpower;
+
+
 ?>
