@@ -37,6 +37,9 @@
                     $sql_query = "SELECT * FROM marvelMovies? WHERE productionStudio = 'Marvel Studio'";
                     echo "marvelstudio";
                     break;
+                default:
+                    $sql_query = "SELECT * FROM marvelMovies?";
+                    break;
 
             }
 
