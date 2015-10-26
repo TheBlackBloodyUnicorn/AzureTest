@@ -20,6 +20,7 @@
         </form>
 
         <?php
+        $query = $_GET['query'];
             // connect to your Azure server and select database (remember you connection details are all on the azure portal
             $db = new mysqli(
             "eu-cdbr-azure-west-c.cloudapp.net",
@@ -32,7 +33,22 @@
              die('Connectfailed['.$db->connect_error.']');
             }
 
-            $sql_query = "SELECT * FROM superheros?WHERE superpower LIKE '%laser%'";
+            switch($query){
+                case "before2010":
+                    $sql_query = "SELECT * FROM marvelmovies? WHERE yearReleased < 2010";
+                    break;
+                case "after2010":
+                    $sql_query = "SELECT * FROM marvelmovies? WHERE yearReleased > 2010";
+                    break;
+                case "oscar":
+                    $sql_query = "SELECT * FROM marvelmovies? WHERE notes LIKE '%'.$query.'%'";
+                    break;
+                case "marvelstudio":
+                    $sql_query = "SELECT * FROM marvelmovies? WHERE productionStudio = 'Marvel Studio'";
+                    break;
+
+            }
+
             // execute the SQL query
             $result = $db->query($sql_query);
 
