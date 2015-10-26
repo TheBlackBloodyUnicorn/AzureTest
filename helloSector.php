@@ -21,7 +21,7 @@
             }
 
             switch($query){
-                case "before2010":
+                case 'before2010':
                     $sql_query = "SELECT * FROM marvelMovies? WHERE yearReleased < 2010";
                     echo "test";
                     break;
