@@ -3,6 +3,8 @@
     <head>
     </head>
 
+    <body>
+
 
         <?php
         $query = $_GET['query'];
