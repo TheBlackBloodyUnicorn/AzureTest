@@ -12,10 +12,10 @@
         <form action="helloPrinter.php" method="post">
             <label>Forename</label><input type=“text” name=“forename”>
             <label>Surname</label><input type=“text” name=“surname”>
-            <input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="male" > Male
             <input type="radio" name="gender" value="female"> Female
-            <input type="checkbox" name="superpower" value="Fly"> I have a bike<br>
-            <input type="checkbox" name="superpower" value="fire"> I have a car<br>
+            <input type="checkbox" name="superpower" value="Fly"> fly<br>
+            <input type="checkbox" name="superpower" value="fire"> fire<br>
             <input type="submit" value="Submit">
         </form>
 
