@@ -10,8 +10,7 @@
         $query = $_GET['query'];
             // connect to your Azure server and select database (remember you connection details are all on the azure portal
             $db = new mysqli(
-            "eu-cdbr-azure-west-c.cloudapp.net",
-            "b02fc634d48153",
+            "eu-cdbr-azure-west-c.cloudapp.net;b02fc634d48153",
             "e7728b35",
             "db1508593"
             );
