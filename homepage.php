@@ -1,15 +1,16 @@
 <?php
+session_start();
 /**
  * Created by PhpStorm.
  * User: 1508593
  * Date: 02/11/2015
  * Time: 13:29
  */
-if (isset($_COOKIE['name'])) {
-    echo "You are " . $_COOKIE['name'];
+if (isset($_SESSION['name'])) {
+    echo "You are " . $_SESSION['name'];
 }
-if (isset($_COOKIE['access_level'])) {
-    displayAccessLevelInformation($_COOKIE['access_level']);
+if (isset($_SESSION['access_level'])) {
+    displayAccessLevelInformation($_SESSION['access_level']);
 }
 
 
