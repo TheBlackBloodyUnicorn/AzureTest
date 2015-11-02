@@ -6,6 +6,7 @@
     <body>
 
     <?php
+    session_start();
 
     $username = "Mike";
     $password = "mysecretpassword";
@@ -28,8 +29,8 @@
     </form>
 
         <?php
-        setcookie('name',$username);
-        setcookie('access_level','standarduser');
+        $_SESSION['name']=$username;
+        $_SESSION['access_level']='standarduser';
         ?>
 
 
